@@ -2,9 +2,9 @@
     position: relative;
     max-width: 500px;
     margin: 0 auto;
-
+    min-height: 550px;
     .nav {
-        height: 15vh;
+        min-height: 15vh;
         position: relative;
         z-index: 5;
 
@@ -13,9 +13,17 @@
             cursor: pointer;
         }
 
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         &__social {
             img {
@@ -34,14 +42,15 @@
 
     &__main {
         position: relative;
-        height: 85vh;
+        min-height: 85vh;
         text-align: center;
 
         img:first-of-type {
             position: absolute;
             top: 30%;
             left: 50%;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
             width: 80%;
             z-index: 2;
         }
@@ -50,7 +59,8 @@
             position: absolute;
             top: 48%;
             left: 45%;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
             width: 80%;
             z-index: 1;
         }
@@ -61,7 +71,8 @@
             left: 50%;
             width: 100%;
             height: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             text-transform: uppercase;
             z-index: 3;
 
@@ -80,6 +91,7 @@
                 text-decoration: none;
                 border: 2px solid white;
                 padding: 5px 20px;
+                -webkit-transition: .3s;
                 transition: .3s;
 
                 &:hover {
@@ -158,8 +170,10 @@
 
 @include breakpoint (tablet) {
     .header {
+        min-height: 800px;
         max-width: 800px;
 
+    
         &__main {
             overflow: visible;
 
@@ -214,7 +228,7 @@
 
                 &:nth-child(3) {
                     top: 15%;
-                    left: 520px;
+                    left: 620px;
                 }
 
                 &:nth-child(4) {
@@ -228,8 +242,8 @@
                 }
 
                 &:nth-child(7) {
-                    top: 77%;
-                    left: 550px;
+                    top: 85%;
+                    left: 650px;
                 }
 
                 &:nth-child(8) {
@@ -261,6 +275,7 @@
 @include breakpoint (desktop) {
     .header {
         max-width: 1265px;
+        min-height: 1000px;
 
         .nav {
             height: 15vh;
@@ -296,7 +311,8 @@
                 height: 636px;
                 top: 202px;
                 left: 292px;
-                transform: none;
+                -webkit-transform: none;
+                        transform: none;
             }
 
             img:nth-of-type(2) {
@@ -304,7 +320,8 @@
                 height: 367px;
                 top: 610px;
                 left: 330px;
-                transform: none;
+                -webkit-transform: none;
+                        transform: none;
             }
 
             .text-section {

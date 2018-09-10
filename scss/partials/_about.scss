@@ -1,0 +1,172 @@
+.about {
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text--rise {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 30%;
+        }
+
+        p {
+            margin-top: 25px;
+            color: #868782;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.07px;
+        }
+    }
+
+    &__text--sansara {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+            width: 50%;
+            align-self: center;
+        }
+
+        .owners {
+            p:nth-of-type(1) {
+                margin-top: 25px;
+                color: #868782;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.07px;
+            }
+
+            p:nth-of-type(2) {
+                span:nth-child(1) {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+                    font-weight: 700;
+                    color: #868782;
+                }
+
+                span:nth-child(2) {
+                    display: none;
+                    width: 10%;
+                    border-bottom: 1px solid #333d3c;
+                }
+
+                span:nth-child(3) {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 2.4px;
+                    text-transform: uppercase;
+                    color: #333d3c;
+                }
+
+                span:nth-child(4) {
+                    font-size: 18px;
+                    color: #333d3c;
+                    text-transform: uppercase;
+                    letter-spacing: 2.4px;
+                    font-weight: 700;
+
+                    span {
+                        display: inline-block;
+                        width: 60px;
+                        height: 24px;
+                        text-align: center;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        background-color: #bab8ac;
+                        color: white;
+                        letter-spacing: 2.4px;
+                        font-size: 11px;
+                        font-weight: 700;
+                        padding: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            P:last-of-type {
+                span:nth-child(1) {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+                    font-weight: 700;
+                    color: #868782;
+                }
+
+                span:nth-child(2) {
+                    display: none;
+                    width: 10%;
+                    border-bottom: 1px solid #333d3c;
+                }
+
+                span:nth-child(3) {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 2.4px;
+                    text-transform: uppercase;
+                    color: #333d3c;
+                }
+
+                span:nth-child(4) {
+                    font-size: 18px;
+                    color: #333d3c;
+                    text-transform: uppercase;
+                    letter-spacing: 2.4px;
+                    font-weight: 700;
+
+                    span {
+                        display: inline-block;
+                        width: 60px;
+                        height: 24px;
+                        text-align: center;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        background-color: #bab8ac;
+                        color: white;
+                        letter-spacing: 2.4px;
+                        font-size: 11px;
+                        font-weight: 700;
+                        padding: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint (tablet) {
+    .about {
+        max-width: 800px;
+
+        &__text--rise {
+            flex-direction: row;
+
+            P {
+                margin-left: 70px;
+            }
+        }
+
+        &__text--sansara {
+            flex-direction: row;
+
+            img {
+                width: 215px;
+                height: 49px;
+            }
+            .owners {
+                margin-left: 70px;
+            }
+        }
+    }
+}

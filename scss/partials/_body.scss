@@ -1,11 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333d3c;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #caf2f1), color-stop(30%, #caf2f0), color-stop(45%, #d0efea), color-stop(50%, #d6ece3), color-stop(65%, #e8e3d0), color-stop(75%, #ede1ca), to(#eee0c9));
     background-image: linear-gradient(to right, #caf2f1 10%, #caf2f0 30%, #d0efea 45%, #d6ece3 50%, #e8e3d0 65%, #ede1ca 75%, #eee0c9 100%);
     background-repeat: no-repeat;
 }
 
-section {
-    height: 100vh;
-    width: 100%;
-}
