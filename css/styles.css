@@ -434,12 +434,6 @@ body {
       flex-basis: 50%;
       border-bottom: 1px solid #333d3c;
       padding-bottom: 20px; }
-      .about__banner--content p {
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease; }
     .about__banner--trigger {
       display: flex;
       padding-top: 20px;
@@ -452,11 +446,11 @@ body {
         text-transform: uppercase;
         color: #333d3c;
         letter-spacing: 2.4px;
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease; }
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease; }
       .about__banner--trigger img {
         cursor: pointer; }
 

@@ -155,13 +155,6 @@
             flex-basis: 50%;
             border-bottom: 1px solid #333d3c;
             padding-bottom: 20px;
-            p {
-                transition: all .3s ease;            ;
-                -webkit-transition: all .3s ease            ;
-                -moz-transition: all .3s ease            ;
-                -ms-transition: all .3s ease            ;
-                -o-transition: all .3s ease            ;
-}
         }
 
         &--trigger {
@@ -177,12 +170,13 @@
                 text-transform: uppercase;
                 color: #333d3c;
                 letter-spacing: 2.4px;
-                transition: all .3s ease;
-                -webkit-transition: all .3s ease;
-                -moz-transition: all .3s ease;
-                -ms-transition: all .3s ease;
-                -o-transition: all .3s ease;
+                transition: all .5s ease;
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                -o-transition: all .5s ease;
             }
+
             img {
                 cursor: pointer;
             }
