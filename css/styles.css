@@ -330,8 +330,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .about__text--rise img {
-      width: 30%; }
+    .about__text--rise .rise-logo {
+      width: 221px;
+      height: 137px; }
+    .about__text--rise img:nth-of-type(2) {
+      display: none; }
+    .about__text--rise img:nth-of-type(3) {
+      display: none; }
+    .about__text--rise img:nth-of-type(4) {
+      display: none; }
     .about__text--rise p {
       margin-top: 25px;
       color: #868782;
@@ -342,9 +349,10 @@ body {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
-    .about__text--sansara img {
-      width: 50%;
+    align-items: center; }
+    .about__text--sansara .sansara-logo {
+      width: 215px;
+      height: 49px;
       align-self: center; }
     .about__text--sansara .owners p:nth-of-type(1) {
       margin-top: 25px;
@@ -424,7 +432,12 @@ body {
         font-weight: 700;
         padding: 2px;
         cursor: pointer; }
+    .about__text--sansara img:nth-of-type(2) {
+      display: none; }
+    .about__text--sansara img:nth-of-type(3) {
+      display: none; }
   .about__banner {
+    position: relative;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -451,27 +464,250 @@ body {
         -moz-transition: all .5s ease;
         -ms-transition: all .5s ease;
         -o-transition: all .5s ease; }
-      .about__banner--trigger img {
+      .about__banner--trigger .btn-banner {
+        display: inline-block;
         cursor: pointer; }
+    .about__banner img {
+      display: none; }
 
 .strong {
   font-size: 40px !important; }
 
 @media (min-width: 768px) {
   .about {
+    position: relative;
     max-width: 800px; }
     .about__text--rise {
-      flex-direction: row; }
+      position: relative;
+      flex-direction: row;
+      padding: 10px; }
+      .about__text--rise .rise-logo {
+        width: 221px;
+        height: 140px; }
       .about__text--rise P {
         margin-left: 70px; }
+      .about__text--rise img:nth-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 17px; }
+      .about__text--rise img:nth-of-type(3) {
+        display: inline-block;
+        position: absolute;
+        top: 105px;
+        left: -73px; }
+      .about__text--rise img:nth-of-type(4) {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 250px; }
     .about__text--sansara {
-      flex-direction: row; }
-      .about__text--sansara img {
+      position: relative;
+      flex-direction: row;
+      padding: 10px; }
+      .about__text--sansara .sansara-logo {
         width: 215px;
         height: 49px; }
       .about__text--sansara .owners {
-        margin-left: 70px; } }
+        margin-top: 50px;
+        margin-left: 70px; }
+        .about__text--sansara .owners p:nth-of-type(2) span:nth-child(1) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+        .about__text--sansara .owners p:nth-of-type(2) span:nth-child(3) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+        .about__text--sansara .owners p:nth-of-type(2) span:nth-child(4) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+        .about__text--sansara .owners P:last-of-type span:nth-child(1) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+        .about__text--sansara .owners P:last-of-type span:nth-child(3) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+        .about__text--sansara .owners P:last-of-type span:nth-child(4) {
+          font-size: 14px;
+          letter-spacing: 1px; }
+      .about__text--sansara img:nth-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 190px; }
+      .about__text--sansara img:nth-of-type(3) {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        left: -27px;
+        z-index: -1; }
+    .about__banner {
+      margin-top: 100px; }
+      .about__banner img:nth-last-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        bottom: -22px;
+        right: 119px; } }
 
 @media (min-width: 1200px) {
   .about {
-    max-width: 936px; } }
+    align-items: flex-start;
+    max-width: 1000px; }
+    .about__text--rise {
+      position: relative;
+      width: 100%; }
+      .about__text--rise img:nth-of-type(2) {
+        top: -17px;
+        left: 3px; }
+      .about__text--rise img:nth-of-type(3) {
+        top: 108px;
+        left: -86px; }
+      .about__text--rise img:nth-of-type(4) {
+        top: 40px;
+        left: 268px; }
+      .about__text--rise P {
+        width: 427px;
+        margin-left: 240px; }
+    .about__text--sansara {
+      padding: 0;
+      width: 100%;
+      flex-direction: row; }
+      .about__text--sansara .sansara-logo {
+        margin-top: 100px; }
+      .about__text--sansara .owners {
+        margin-left: 257px; }
+        .about__text--sansara .owners p:nth-of-type(1) {
+          width: 426px; }
+        .about__text--sansara .owners p:nth-of-type(2) {
+          width: 490px; }
+          .about__text--sansara .owners p:nth-of-type(2) span:nth-child(1) {
+            font-size: 14px;
+            letter-spacing: 0.7px; }
+          .about__text--sansara .owners p:nth-of-type(2) span:nth-child(2) {
+            display: inline-block;
+            width: 32px;
+            border-bottom: 1px solid #333d3c; }
+          .about__text--sansara .owners p:nth-of-type(2) span:nth-child(3) {
+            font-size: 15px;
+            letter-spacing: 0.7px; }
+          .about__text--sansara .owners p:nth-of-type(2) span:nth-child(4) {
+            font-size: 15px;
+            letter-spacing: 0.7px; }
+            .about__text--sansara .owners p:nth-of-type(2) span:nth-child(4) span {
+              display: inline-block;
+              width: 60px;
+              height: 24px;
+              text-align: center;
+              line-height: 24px;
+              text-transform: uppercase;
+              background-color: #bab8ac;
+              color: white;
+              letter-spacing: 2.4px;
+              font-size: 11px;
+              font-weight: 700;
+              padding: 2px;
+              cursor: pointer; }
+        .about__text--sansara .owners P:last-of-type {
+          padding-top: 5px; }
+          .about__text--sansara .owners P:last-of-type span:nth-child(1) {
+            font-size: 14px;
+            letter-spacing: 0.4px; }
+          .about__text--sansara .owners P:last-of-type span:nth-child(2) {
+            display: inline-block;
+            width: 98px;
+            border-bottom: 1px solid #333d3c; }
+          .about__text--sansara .owners P:last-of-type span:nth-child(3) {
+            font-size: 15px;
+            letter-spacing: 0.7px; }
+          .about__text--sansara .owners P:last-of-type span:nth-child(4) {
+            font-size: 15px;
+            letter-spacing: 0.7px; }
+            .about__text--sansara .owners P:last-of-type span:nth-child(4) span {
+              display: inline-block;
+              width: 60px;
+              height: 24px;
+              text-align: center;
+              line-height: 24px;
+              text-transform: uppercase;
+              background-color: #bab8ac;
+              color: white;
+              letter-spacing: 2.4px;
+              font-size: 11px;
+              font-weight: 700;
+              padding: 2px;
+              cursor: pointer; }
+      .about__text--sansara img:nth-of-type(2) {
+        top: 60px;
+        left: 249px; }
+      .about__text--sansara img:nth-of-type(3) {
+        top: 80px;
+        left: -22px; }
+    .about__banner {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 140px;
+      width: 872px;
+      height: 215px;
+      padding: 15px; }
+      .about__banner--content {
+        height: 150px;
+        font-size: 14px;
+        border-bottom: none; }
+        .about__banner--content p {
+          text-align: right;
+          padding-right: 23px;
+          border-right: 1px solid #333d3c; }
+      .about__banner--trigger {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start; }
+        .about__banner--trigger p {
+          margin-left: 57px;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%); }
+        .about__banner--trigger img {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%); }
+      .about__banner img:nth-last-child(2) {
+        bottom: -35px;
+        right: 162px; }
+    .about__spheres img:nth-child(1) {
+      position: absolute;
+      top: -19px;
+      left: 0; }
+    .about__spheres img:nth-child(2) {
+      position: absolute;
+      top: 106px;
+      left: -88px; }
+    .about__spheres img:nth-child(3) {
+      position: absolute;
+      top: 221px;
+      left: 248px; }
+    .about__spheres img:nth-child(4) {
+      position: absolute;
+      top: 243px;
+      left: -24px;
+      z-index: -1; }
+    .about__spheres img:nth-child(5) {
+      position: absolute;
+      bottom: -31px;
+      right: 307px; }
+    .about__spheres img:nth-child(6) {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; } }
+
+.unpack {
+  height: 100vh;
+  width: 100%; }
