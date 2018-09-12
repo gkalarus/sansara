@@ -227,7 +227,7 @@
         &__text--rise {
             position: relative;
             flex-direction: row;
-            padding: 10px;
+            padding: 50px;
 
             .rise-logo {
                 width: 221px;
@@ -256,8 +256,8 @@
                 &:nth-of-type(4) {
                     display: inline-block;
                     position: absolute;
-                    top: 30px;
-                    left: 250px;
+                    top: 72px;
+                    left: 278px;
                 }
             }
 
@@ -266,7 +266,7 @@
         &__text--sansara {
             position: relative;
             flex-direction: row;
-            padding: 10px;
+            padding: 50px;
 
             .sansara-logo {
                 width: 215px;
@@ -325,8 +325,8 @@
                 &:nth-of-type(3) {
                     display: inline-block;
                     position: absolute;
-                    top: 40px;
-                    left: -27px;
+                    top: 94px;
+                    left: 14px;
                     z-index: -1;
                 }
             }

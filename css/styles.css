@@ -497,7 +497,7 @@ body {
     .about__text--rise {
       position: relative;
       flex-direction: row;
-      padding: 10px; }
+      padding: 50px; }
       .about__text--rise .rise-logo {
         width: 221px;
         height: 140px; }
@@ -516,12 +516,12 @@ body {
       .about__text--rise img:nth-of-type(4) {
         display: inline-block;
         position: absolute;
-        top: 30px;
-        left: 250px; }
+        top: 72px;
+        left: 278px; }
     .about__text--sansara {
       position: relative;
       flex-direction: row;
-      padding: 10px; }
+      padding: 50px; }
       .about__text--sansara .sansara-logo {
         width: 215px;
         height: 49px; }
@@ -554,8 +554,8 @@ body {
       .about__text--sansara img:nth-of-type(3) {
         display: inline-block;
         position: absolute;
-        top: 40px;
-        left: -27px;
+        top: 94px;
+        left: 14px;
         z-index: -1; }
     .about__banner {
       margin-top: 100px; }
@@ -907,3 +907,7 @@ body {
       .overview__offer .spheres img:nth-child(2) {
         bottom: 100px;
         right: -70px; } }
+
+.contact {
+  min-height: 100vh;
+  width: 100%; }
