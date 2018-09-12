@@ -209,6 +209,7 @@
                 cursor: pointer;
             }
         }
+
         img {
             display: none;
         }
@@ -334,6 +335,7 @@
 
         &__banner {
             margin-top: 100px;
+
             img {
                 &:nth-last-of-type(2) {
                     display: inline-block;
@@ -539,6 +541,7 @@
                     -o-transform: translateY(-50%);
                 }
             }
+
             img {
                 &:nth-last-child(2) {
                     bottom: -35px;

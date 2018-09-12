@@ -72,6 +72,7 @@
                 right: 0;
             }
         }
+
         .spheres {
             display: none;
         }
@@ -144,6 +145,7 @@
                 right: 0;
             }
         }
+
         .spheres {
             display: none;
         }
@@ -155,62 +157,73 @@
     .overview {
         &__realizations {
             height: 35%;
-        
+
             .spheres {
                 display: inline-block;
+
                 img:nth-child(1) {
                     position: absolute;
                     top: -85px;
                     left: 0;
                 }
+
                 img:nth-child(2) {
                     position: absolute;
                     bottom: 115px;
                     left: -70px;
                 }
+
                 img:nth-child(3) {
                     position: absolute;
                     bottom: 0;
                     right: 0px;
                 }
             }
+
             p {
                 &:first-of-type {
                     font-size: 40px;
                 }
-    
+
                 &:nth-child(2) {
                     font-size: 20px;
                 }
             }
+
             .button {
                 font-size: 20px;
             }
         }
+
         &__offer {
             height: 35%;
+
             .spheres {
                 display: inline-block;
+
                 img:nth-child(1) {
                     position: absolute;
                     bottom: -70px;
                     left: 400px;
                 }
+
                 img:nth-child(2) {
                     position: absolute;
                     bottom: 50%;
                     right: -40px;
                 }
             }
+
             p {
                 &:first-of-type {
                     font-size: 40px;
                 }
-    
+
                 &:nth-child(2) {
                     font-size: 20px;
                 }
             }
+
             .button {
                 font-size: 20px;
             }
@@ -220,50 +233,56 @@
 
 @include breakpoint (desktop) {
     .overview {
+        width: 1136px;
+        margin: 0 auto;
+
         &__realizations {
             position: absolute;
             top: 150px;
-            left: 450px;
+            left: 0;
             width: 680px;
             height: 409px;
             margin: 0;
 
             .spheres {
                 display: inline-block;
+
                 img:nth-child(1) {
                     top: -170px;
                     left: 200px;
                 }
-           
+
                 img:nth-child(3) {
                     bottom: -35px;
                     left: 100px;
                 }
             }
-        
+
 
         }
+
         &__offer {
             position: absolute;
             top: 450px;
-            right: 350px;
-            
+            right: 0;
             width: 534px;
             height: 336px;
             margin: 0;
+
             .spheres {
                 display: inline-block;
+
                 img:nth-child(1) {
                     top: -220px;
                     right: 0;
                 }
-           
+
                 img:nth-child(2) {
                     bottom: 100px;
                     right: -70px;
                 }
             }
-        
+
         }
     }
 }
