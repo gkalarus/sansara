@@ -726,6 +726,7 @@ body {
       left: 0; } }
 
 .overview {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -874,3 +875,35 @@ body {
       font-size: 20px; }
     .overview__offer .button {
       font-size: 20px; } }
+
+@media (min-width: 1200px) {
+  .overview__realizations {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 680px;
+    height: 409px;
+    margin: 0; }
+    .overview__realizations .spheres {
+      display: inline-block; }
+      .overview__realizations .spheres img:nth-child(1) {
+        top: -170px;
+        left: 200px; }
+      .overview__realizations .spheres img:nth-child(3) {
+        bottom: -35px;
+        left: 100px; }
+  .overview__offer {
+    position: absolute;
+    top: 450px;
+    right: 350px;
+    width: 534px;
+    height: 336px;
+    margin: 0; }
+    .overview__offer .spheres {
+      display: inline-block; }
+      .overview__offer .spheres img:nth-child(1) {
+        top: -220px;
+        right: 0; }
+      .overview__offer .spheres img:nth-child(2) {
+        bottom: 100px;
+        right: -70px; } }
